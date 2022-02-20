@@ -4,6 +4,6 @@
 
 Repositorio con las Katas del OnBoarding de Launch X realizadas por Muriel González Diego - **`UXP`**
 
-![Paisaje](https://i.redd.it/c1fofeeainj61.jpg)
+![Paisaje](tianjin-geecb47458_1920.jpg)
 
 Bonito día 😋
