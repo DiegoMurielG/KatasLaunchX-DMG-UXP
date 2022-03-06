@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Reposteria a domicilio | Panqué de Limón y Zarzamora</title>
+
+        <style>
+            body{
+                background-color: #e8a215c5;
+                align-content: center;
+            }
+
+            header{
+                padding: 15px;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                text-align: center;
+            }
+
+            footer{
+                align-content: center;
+                text-align: center;
+                font-size: 32px;
+            }
+            li{
+                list-style: none;
+            }
+            table, th, td{
+                text-align:center;
+                border-color: black;
+                border: 1px solid;
+                border-collapse: collapse;
+            }
+            th{
+                padding: 25px;
+                background-color: #b35f11e1;
+            }
+
+            .nomCategoria{
+                padding-left:20vw;
+                padding-top: 25px;
+                padding-bottom: 25px;
+                font-family:sans-serif;
+            }
+
+            .nombre{
+                font-size: larger;
+                text-decoration: underline;
+            }
+
+            .pastel{
+                background-color: #e831153d;
+                padding: 10px;
+                margin: 25px;
+                display:block;
+                width: 35vw;
+            }
+
+            .panque{
+                background-color: #e8a21573;
+                padding: 10px;
+                margin: 25px;
+                display:block;
+                width: 35vw;
+            }
+
+            .postreFrio{
+                background-color: #dec31471;
+                padding: 10px;
+                margin: 25px;
+                display:block;
+                width: 35vw;
+            }
+
+            .imagen{
+                align-content: center;
+            }
+
+            .descrip{
+                font-size: 18px;
+            }
+            .precios{
+                display:block;
+                
+                
+            }
+
+            .precio{
+                padding-left: 20vw;
+                font-size: 32px;
+            }
+
+            .precioTXT{
+                width:auto
+            }
+
+
+            .adornos{
+                display:list-item
+            }
+            .adornosTXT{
+                font-size: 48px;
+            }
+
+            .adicional{
+                font-size: 32px;
+            }
+
+            .saboresExtra{
+                font-size: 48px;
+            }
+
+            .addExtra{
+                font-size: 32px;
+                padding-left: 25px;
+            }
+
+            .toppingsAdd{
+                font-size: 32px;
+                padding-left: 25px;
+            }
+
+            .nomCategoria{
+                padding-left:20vw;
+                padding-top: 25px;
+                padding-bottom: 25px;
+                font-family:sans-serif;
+            }
+
+            #form{
+                display: block;
+                padding-left: 22vw;
+            }
+            #producto{
+                padding-left: 20vw;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Reposteria a domicilio</h1><br>
+            <h5>Ordene lo que guste, estamos a sus órdenes</h5>
+            <img src="../imagenes/pasteleriaLogo.png" alt="Reposteria a domicilio" width="300">
+
+            <nav>
+                <ul>
+                    <li><a href="../clientePasteleria.html" style="color: #E00075; text-decoration:dashed">Página principal</a></li>
+                </ul>
+            </nav>
+
+        </header>
+        <h3 class="nomCategoria">Pasteles</h3>
+        <section id="producto">
+            <div class="panque">
+                <div class="nombre"><p class="pastelNombre">Panqué de Limón y Zarzamora</p></div>
+                <div class="imagen"><img src="../imagenes/berryBread.jpg" alt="Panqué de Limón y Zarzamora" width="440"></div>
+                <div class="descrip"><p>Te presentamos un suculento pastel de plátano con chocolate y nuez que, créenos, ¡tienes que probar!</p></div>
+            </div>
+        </section>
+        <section id="form">
+            <h3 class="nomCategoria">Formulario de Compra</h3>
+            <form action="" method="post" id="formCompra">
+                <div class="formLabel"><label for="nombre">Nombre</label></div>
+                <div class="formInput"><input type="text" name="nombre" id="nombre"></div>
+
+                <div class="formLabel"><label for="apellido1">Apellido Paterno</label></div>
+                <div class="formInput"><input type="text" name="apellido1" id="apellido1"></div>
+
+                <div class="formLabel"><label for="apellido2">Apellido Paterno</label></div>
+                <div class="formInput"><input type="text" name="apellido2" id="apellido2"></div>
+
+                <div class="formLabel"><label for="telefono">Teléfono de contacto</label></div>
+                <div class="formInput"><input type="tel" name="telefono" id="telefono"></div>
+
+                <div class="formLabel"><label for="mail">Correo de contacto</label></div>
+                <div class="formInput"><input type="email" name="mail" id="mail"></div>
+
+                <div class="formLabel"><label for="descripcion">Descripción del pedido</label></div>
+                <div class="formInput"><input type="text" name="descripcion" id="descripcion"></div>
+
+                <div class="precios">
+                    <p>Precio sin adornos:</p><br>
+
+                    <input type="radio" id="pLyZC" name="tamanio" value="chico">
+                    <label for="pLyZC">Chico $295 cu. (6 pax)</label>
+
+                    <input type="radio" id="pLyZG" name="tamanio" value="grande">
+                    <label for="pLyZG">Grande $460 cu. (12 pax)</label>
+
+                    <label for="cantidad">Cantidad de pasteles</label>
+                    <input type="number" name="cantidad" id="cantidad" min="1">
+                </div>
+
+                <div class="adornos">
+                    <div class="adornosTXT"><p>Adornos: </p></div><div class="adicional"><p>Coste adicional</p></div>
+                    
+                    <input type="radio" name="toppings" id="topChocolate">
+                    <div class="toppingsAdd"><label for="topChocolate"   >Topping de Chocolate ...... </label></div><div class="precio"><p style="color: chocolate;">+$45</p></div>
+                    
+                    <input type="radio" name="toppings" id="topFrutas">
+                    <div class="toppingsAdd"><label for="topFrutas"      >Topping de frutas ......... </label></div><div class="precio"><p style="color: chocolate;">+$65</p></div>
+                    
+                    <input type="radio" name="toppings" id="topAzucar">
+                    <div class="toppingsAdd"><label for="topAzucar"      >Azúcar Glass .............. </label></div><div class="precio"><p style="color: chocolate;">+$15</p></div>
+                    
+                    <input type="radio" name="toppings" id="topTodos">
+                    <div class="toppingsAdd"><label for="topTodos"       >Todos los anteriores ...... </label></div><div class="precio"><p style="color: chocolate;">+$125</p></div>
+                    
+                </div>
+
+                <div class="sabores">
+                    <div class="saboresExtra"><p>Sabores extra:</p></div><div class="adicional"><p>Coste adicional</p><br></div>
+
+                    <input type="checkbox" name="saboresExtra" id="chocolateExtra">
+                    <div class="addExtra"><label for="chocolateExtra"       >Chocolate ...... </label></div><div class="precio"><p style="color: chocolate;">+$85</p></div>
+                    
+                    <input type="checkbox" name="saboresExtra" id="platanoExtra">
+                    <div class="addExtra"><label for="platanoExtra"       >Platano ...... </label></div><div class="precio"><p style="color: chocolate;">+$80</p></div>
+                    
+                    <input type="checkbox" name="saboresExtra" id="zanahoriaExtra">
+                    <div class="addExtra"><label for="zanahoriaExtra"     >Zanahoria .... </label></div><div class="precio"><p style="color: chocolate;">+$75</p></div>
+
+                    <input type="checkbox" name="saboresExtra" id="peraExtra">
+                    <div class="addExtra"><label for="peraExtra"          >Pera ......... </label></div><div class="precio"><p style="color: chocolate;">+$75</p></div>
+
+                    <input type="checkbox" name="saboresExtra" id="calabazaExtra">
+                    <div class="addExtra"><label for="calabazaExtra"      >Calabaza ..... </label></div><div class="precio"><p style="color: chocolate;">+$60</p></div>
+                </div>
+
+                <label for="submit">Confirmar Pedido</label>
+                <input type="submit" value="Confirmar" id="submit">
+            </form>
+
+        </section>
+        <footer>
+            <h4 style="color: chocolate;">PAX: Porciones Aproximadas</h4><br>
+            <h3>Sitios de Interes</h3>
+            <ul>
+                <li><a href="../clientePasteleria.html" style="color: #E00075; text-decoration:dashed">Página principal</a></li>
+            </ul>
+            <h4>Horarios de atencion</h4>
+            <table>
+                <tr>
+                    <th>Lunes - Viernes</th>
+                    <th>Sábados y Domingos</th>
+                </tr>
+                <tr>
+                    <td>8 - 20 hrs.</td>
+                    <td>9 - 20hrs.</td>
+                </tr>
+            </table>
+            <h4>Datos de contacto</h4>
+            <ul>
+                <li>Teléfono 5522664488</li>
+                <li>Dirección</li>
+            </ul>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1881.9123348372873!2d-99.1799766994161!3d19.376743003358538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff84b6540259%3A0xf0b0da9451e7d2c0!2sMillet%2028-56%2C%20Extremadura%20Insurgentes%2C%20Benito%20Ju%C3%A1rez%2C%2003740%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses-419!2smx!4v1646585015377!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+        </footer>
+    </body>
+</html>
