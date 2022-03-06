@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Reposteria a domicilio | HOME</title>
+        <style>
+            body{
+                background-color: #e8a215c5;
+                align-content: center;
+            }
+
+            header{
+                padding: 15px;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                text-align: center;
+            }
+
+            footer{
+                align-content: center;
+                text-align: center;
+                font-size: 32px;
+            }
+
+            
+            table, th, td{
+                text-align:center;
+                border-color: black;
+                border: 1px solid;
+                border-collapse: collapse;
+            }
+
+            th{
+                padding: 25px;
+                background-color: #b35f11e1;
+            }
+            li{
+                list-style: none;
+            }
+
+            .nomCategoria{
+                padding-left:20vw;
+                padding-top: 25px;
+                padding-bottom: 25px;
+                font-family:sans-serif;
+            }
+
+            .nombre{
+                font-size: larger;
+                text-decoration: underline;
+            }
+
+            .pastel{
+                background-color: #e831153d;
+                padding: 10px;
+                margin: 25px;
+                display:block;
+                width: 35vw;
+            }
+
+            .panque{
+                background-color: #e8a21573;
+                padding: 10px;
+                margin: 25px;
+                display:block;
+                width: 35vw;
+            }
+
+            .postreFrio{
+                background-color: #dec31471;
+                padding: 10px;
+                margin: 25px;
+                display:block;
+                width: 35vw;
+            }
+
+            .imagen{
+                align-content: center;
+            }
+
+            .descrip{
+                font-size: 18px;
+            }
+            .precios{
+                display:block;
+                
+                
+            }
+
+            .precioTXT{
+                width:auto
+            }
+
+            #pasteles{
+                padding-left:15vw;
+                display: flex;
+                flex-wrap: wrap;
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+
+            #panques{
+                padding-left:15vw;
+                display: flex;
+                flex-wrap: wrap;
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+
+            #postresFrios{
+                padding-left:15vw;
+                display: flex;
+                flex-wrap: wrap;
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Reposteria a domicilio</h1><br>
+            <h5>Ordene lo que guste, estamos a sus órdenes</h5>
+            <img src="imagenes/pasteleriaLogo.png" alt="Reposteria a domicilio" width="300">
+        </header>
+        <h3 class="nomCategoria">Pasteles</h3>
+        <section id="pasteles">
+            <div class="pastel"><a href="productos/redVelvet.html" style="color: black; text-decoration: none;">
+                <div class="nombre">    <p class="pastelNombre">Red Velvet</p></div>
+                <div class="imagen">    <img src="imagenes/redVelvet.jpg" alt="Pastel Red Velvet" width="440"></div>
+                <div class="descrip">   <p>Un exquisito pastel de red velvet (con un toque de chocolate) y queso crema.</p></div>
+                <div class="precios">
+                    <p class="precioTXT">Precio sin adornos:</p><br>
+
+                    <p>Chico $310 cu. (10 pax)</p><br>
+
+                    <p>Grande $500 cu. (20 pax)</p>
+                    
+                </div>
+            </div></a>
+            <div class="pastel"><a href="productos/pastelChocolate.html" style="color: black; text-decoration: none;">
+                <div class="nombre"><p class="pastelNombre">Pastel de Chocolate</p></div>
+                <div class="imagen"><img src="imagenes/chocolateCake.jpg" alt="Pastel de Chocolate" width="440"></div>
+                <div class="descrip"><p>¿Recuerdas que nos encanta el chocolate? ¡Ahora imagínate este pastel!</p></div>
+                <div class="precios">
+                    <p class="precioTXT">Precio sin adornos:</p><br>
+
+                    <p>Chico $295 cu. (10 pax)</p><br>
+
+                    <p>Grande $440 cu. (20 pax)</p>
+                    
+                </div>
+            </div></a>
+            <div class="pastel"><a href="productos/pastelPlatano.html" style="color: black; text-decoration: none;">
+                <div class="nombre"><p class="pastelNombre">Pastel de Platano</p></div>
+                <div class="imagen"><img src="imagenes/bananaCake.jpg" alt="Pastel de Platano" width="440"></div>
+                <div class="descrip"><p>Te presentamos un suculento pastel de plátano con chocolate y nuez que, créenos, ¡tienes que probar!</p></div>
+                <div class="precios">
+                    <p class="precioTXT">Precio sin adornos:</p><br>
+
+                    <p>Chico $280 cu. (8 pax)</p><br>
+
+                    <p>Grande $430 cu. (15 pax)</p>
+                    
+                </div>
+            </div></a>
+            <div class="pastel"><a href="productos/pastelCalabaza.html" style="color: black; text-decoration: none;">
+                <div class="nombre"><p class="pastelNombre">Tarta de Calabaza</p></div>
+                <div class="imagen"><img src="imagenes/pumpkinPye.jpg" alt="Tarta de Calabaza" width="440"></div>
+                <div class="descrip"><p>Con una base crujiente, un relleno dulce y exquisita calabaza</p></div>
+                <div class="precios">
+                    <p class="precioTXT">Precio sin adornos:</p><br>
+
+                    <p>Chico $280 cu. (4 pax)</p><br>
+
+                    <p>Grande $430 cu. (8 pax)</p>
+
+                </div>
+            </div></a>
+        </section>
+        <h3 class="nomCategoria">Panqués</h3>
+        <section id="panques">
+            
+            <div class="panque"><a href="productos/panqueLimonZarzamora.html" style="color: black; text-decoration: none;">
+                <div class="nombre"><p class="panqueNombre">Panqué de Limón y Zarzamora</p></div>
+                <div class="imagen"><img src="imagenes/berryBread.jpg" alt="Panqué de Limón y Zarzamora" width="440"></div>
+                <div class="descrip"><p>Rico panqué de limón con zarzamora en trosos, perfecto para disfrutar acompañado o solo</p></div>
+                <div class="precios">
+                    <p class="precioTXT">Precio sin adornos:</p><br>
+
+                    <p>Chico $295 cu. (6 pax)</p><br>
+
+                    <p>Grande $460 cu. (12 pax)</p>
+
+                </div>
+            </div></a>
+            <div class="panque"><a href="productos/panqueZanahoria.html" style="color: black; text-decoration: none;">
+                <div class="nombre"><p class="panqueNombre">Panqué de Zanahoria</p></div>
+                <div class="imagen"><img src="imagenes/carrorBread.jpg" alt="Panqué de Zanahoria" width="440"></div>
+                <div class="descrip"><p>Dulce panqué de zanahoria, con solo holerlo sabras lo deliciso que esta</p></div>
+                <div class="precios">
+                    <p class="precioTXT">Precio sin adornos:</p><br>
+
+                    <p>Chico $280 cu. (5 pax)</p><br>
+
+                    <p>Grande $460 cu. (10 pax)</p>
+
+                </div>
+            </div></a>
+        </section>
+        <h3 class="nomCategoria">Pays y postres frios</h3>
+        <section id="postresFrios">
+            
+            <div class="postreFrio"><a href="productos/pieLimon.html" style="color: black; text-decoration: none;">
+                <div class="nombre"><p class="frioNombre">Pay de Limón</p><br></div>
+                <div class="imagen"><img src="imagenes/lemosPie.jpg" alt="Pay de Limón" width="440"></div>
+                <div class="descrip"><p>Frío, esponjoso y dulce, este pay de limón te llevará a otro lugar</p></div>
+                <div class="precios">
+                    <p class="precioTXT">Precio sin adornos:</p><br>
+
+                    <p>Chico $290 cu. (7 pax)</p><br>
+
+                    <p>Grande $480 cu. (15 pax)</p>
+
+                </div>
+            </div></a>
+            <div class="postreFrio"><a href="productos/flan.html" style="color: black; text-decoration: none;">
+                <div class="nombre"><p class="frioNombre">Flan napolitano</p><br></div>
+                <div class="imagen"><img src="imagenes/flan.jpg" alt="Flan napolitano" width="440"></div>
+                <div class="descrip"><p>Con la perfecta consistencia y cantidad de caramelo, este flan napolitano te enseñará lo que vale la pena</p></div>
+                <div class="precios">
+                    <p class="precioTXT">Precio sin adornos:</p><br>
+
+                    <p>Chico $300 cu. (8 pax)</p><br>
+
+                    <p>Grande $450 cu. (20 pax)</p>
+
+                </div>
+            </div></a>
+        </section>
+        
+        <footer>
+            <h4 style="color: chocolate;">PAX: Porciones Aproximadas</h4>
+            <h4>Horarios de atencion</h4>
+            <table>
+                <tr>
+                    <th>Lunes - Viernes</th>
+                    <th>Sábados y Domingos</th>
+                </tr>
+                <tr>
+                    <td>8 - 20 hrs.</td>
+                    <td>9 - 20hrs.</td>
+                </tr>
+            </table>
+            <h4>Datos de contacto</h4>
+            <ul>
+                <li>Teléfono 5522664488</li>
+                <li>Dirección</li>
+            </ul>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1881.9123348372873!2d-99.1799766994161!3d19.376743003358538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff84b6540259%3A0xf0b0da9451e7d2c0!2sMillet%2028-56%2C%20Extremadura%20Insurgentes%2C%20Benito%20Ju%C3%A1rez%2C%2003740%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses-419!2smx!4v1646585015377!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+        </footer>
+    </body>
+
+</html>
