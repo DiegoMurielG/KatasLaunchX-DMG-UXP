@@ -1,0 +1,587 @@
+body {
+    /*font-family: 'Noto Sans';*/
+    font-family:Arial, Helvetica, sans-serif
+}
+
+h1{
+    color: #14179e;
+    font-size: 72px;
+    font-weight: bolder;
+}
+
+h2{
+    color: #14179e;
+    font-size: 68px;
+    font-weight: bolder;
+}
+
+h3{
+    color: #0a0c57;
+    font-size: 32px;
+}
+
+h4{
+    color: #0a0c57;
+    font-size: 28px;
+}
+
+h6{
+    color: #0a0c57;
+    font-size: 32px;
+    font-weight: bolder;
+}
+
+p{
+    color: rgb(121, 121, 121);
+    font-size:32px;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*=======================================================*/
+/*======================== Header =======================*/
+/*=======================================================*/
+
+header{
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    z-index: 5;
+}
+
+.headerContainer{
+    display: flex;
+    flex-direction: row;
+    height: 10vw;
+    align-items: stretch;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    /*width: 20vw;*/
+    z-index: 2;
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+}
+
+.headerText{
+    /*height: 100%;
+    align-content: center;*/
+    /*align-items: baseline;
+    color: rgb(226, 223, 43);*/
+    margin: auto;
+    font-size: x-large;
+    color: rgb(156, 156, 156);
+    font-weight: 700;
+}
+
+.headerText > p{
+    text-align: center;
+}
+
+.vaccinationBlue{
+    color: #3d34eb;
+    font-size: 48px;
+    font-weight: 1200;
+    
+}
+
+#header1{
+    padding-right: 12vw;
+}
+
+.headerOptions{
+    width: 5vw;
+    /*padding-left: 17%;
+    padding-right: 17%;*/
+    text-align: center;
+    
+}
+
+.button{
+    width: 10vw;
+    background-color: #3d34eb;
+    border-radius: 10px;
+    padding: 0px 25px 0px 25px;/* Top, Right, Down, Left */
+    cursor: pointer;
+}
+.button > p{
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+}
+
+/*=======================================================*/
+/*================== Container Secction =================*/
+/*=======================================================*/
+
+.container1Div{
+    margin-top: 11vw;
+    width: 28%;
+    padding: 0% 7% 0% 10%;
+}
+
+.containerSecction{
+    margin-top: 11vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: justify;
+}
+
+.containerSecctionTop{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: justify;
+}
+
+.imagenPersona{
+    margin: 0vw;
+    width: 50%;
+    margin: 0 0 0 5%;
+}
+
+.imagenPersona > img{
+    width: 100%;
+    height: auto;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between left;
+}
+
+.logoChicoContainer{
+    width: 45%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: justify;
+}
+
+.logoChicoContainer > div {
+    background-color: rgba(250, 171, 44, 0.13);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.logoChicoContainer > p {
+    font-size: 15px;
+    color: #090a49;
+    font-weight: bold;
+    padding-left: 2%;
+}
+
+.citaVacunaContainer{
+    width: 74vw;
+    position: relative;
+    top: -200px;
+    left: 10%;
+}
+
+.vacunaCitaTitulo{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: justify;
+    }
+
+.vacunaCitaTitulo > div {
+    background-color: rgba(44, 65, 250, 0.13);
+    border-radius: 10px;
+}
+
+.vacunaCitaTitulo > p {
+    color: #090a49;
+    padding-left: 2%;
+    font-weight: bolder;
+}
+
+.containerTutorial{
+    width: 100%;
+    justify-content:flex-start;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    background-color: #fffffff3;
+    padding: 2% 5% 0% 5%;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #ffffff;
+}
+
+.containerBlocksTutorial{
+    width: auto;
+}
+
+.logoTutorial{
+    background-color: rgba(44, 65, 250, 0.13);
+    border-radius: 10px;
+    width: 40px;
+    height: 40px;
+    justify-content: baseline;
+}
+
+.logoTutorial > svg{
+    position: relative;
+    top: 5px;
+    left: 5px;
+}
+
+.infoTutorialContainer{
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+    padding: 0% 0% 0% 20%;
+}
+
+.infoTutorialContainer > p{
+    height: 5px;
+}
+
+.criterioTutorial{
+    font-weight: bolder;
+    padding-left: 2%;
+}
+
+.valorTutorial{
+    color: #090a49;
+    padding-left: 2%;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.submit{
+    width: 7%;
+    height: 70px;
+    font-size: 32px;
+}
+
+.submit > p{
+    text-align: center;
+}
+
+/*=======================================================*/
+/*=================== Container Logos ===================*/
+/*=======================================================*/
+
+.logosVacunas{
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.logosVacunas > img{
+    width: 15%;
+    height: auto;
+    padding: 0% 2.5% 0% 2.5%;
+}
+
+/*=======================================================*/
+/*================== Porqué Vacunarse? ==================*/
+/*=======================================================*/
+
+.whyVaccine{
+    /*margin-top: 11vw;*/
+    width: 100%;
+    padding: 0% 45% 0% 10%;
+}
+
+.boxesWhyContainer{
+    justify-content: space-between;
+    margin: 0% 11% 0% 11%;
+}
+
+.logoWhy{
+    background-color: rgba(44, 65, 250, 0.13);
+    border-radius: 10px;
+    width: 75px;
+    height: 75px;
+    justify-content: baseline;
+}
+
+.logoWhy > svg{
+    position: relative;
+    top: 5px;
+    left: 5px;
+}
+
+.reasonWhyBox{
+    flex-direction: column;
+    width: 18%;
+    border-style: solid;
+    border-color: #a1a1a110;
+    border-radius: 15px;
+    padding: 2%;
+}
+
+.boxWhy > p{
+    font-size: 24px;
+}
+
+/*=======================================================*/
+/*==================== Prepatarivos =====================*/
+/*=======================================================*/
+
+.segundaPersona{
+    width: 40vw;
+    margin: 10% 5% 0% 0%;
+}
+
+.segundaPersona > img{
+    width: 100%;
+    height: auto;
+}
+
+.containerPreparationsElements{
+    width: 50vw;
+    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.boxPrepContainer{
+    width: 70%;
+    margin: 0% 0% 0% 15%;
+    /*justify-content: center;*/
+}
+
+.boxPrepIndividualContainer{
+    border-style: solid;
+    border-color: #a1a1a110;
+    border-radius: 15px;
+    padding: 3% 3% 3% 3%;
+    margin: 4% 0% 4% 0%;
+}
+
+.topLogosPrepBox{
+    width: 100%;
+    /*height: 40px;*/
+    flex-wrap: wrap;
+}
+
+.logoPrep{
+    background-color: rgba(44, 65, 250, 0.13);
+    border-radius: 10px;
+    width: fit-content;
+    height: fit-content;
+    padding-right: 5px;
+    margin: 0%;
+}
+
+.logoPrep > svg{
+    margin: 5px 0px 0px 5px;
+}
+
+.textPrepTitle{
+    width: 80%;
+    height: 40px;
+}
+
+.textPrepTitle > h4{
+    position: relative;
+    top: -33px;
+    left: 15px;
+}
+
+.flechasContainer{
+    width: auto;/*94%*/
+    justify-content: flex-end;
+}
+
+.flechas{
+    background-color: rgba(44, 65, 250, 0.13);
+    border-radius: 10px;
+    width: fit-content;
+    height: fit-content;
+    padding-right: 5px;
+    margin: 0%;
+    align-self: flex-end;
+}
+
+.flechas > svg{
+    margin: 5px 0px 0px 5px;
+}
+
+.textPrep{
+    padding: 2% 10% 2% 10%;
+}
+
+.textPrep > p{
+    font-size: 20px;
+}
+
+/*=======================================================*/
+/*====================== Contacto =======================*/
+/*=======================================================*/
+
+.containerPreparationsElementsContact{
+    width: 55vw;
+    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.containerSecctionContact{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: justify;
+}
+
+.terceraPersona{
+    width: 38vw;
+    margin: 10% 0% 0% 5%;
+}
+
+.terceraPersona > img{
+    width: 100%;
+}
+
+.contactText{
+    width: 75%;
+    padding: 0% 45% 0% 20%;
+}
+
+.containerContactBoxes{
+    width: 75%;
+    margin: 10% 45% 0% 15%;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.contactBox{
+    border-style: solid;
+    border-color: #a1a1a110;
+    border-radius: 15px;
+    width: 40%;
+    padding: 4%;
+    margin: 4px;
+}
+
+.logoContact{
+    background-color: rgba(44, 65, 250, 0.13);
+    border-radius: 10px;
+    width: 75px;
+    height: 75px;
+}
+
+.logoContact > svg{
+    padding: 5px 0px 0px 5px;
+}
+
+.textContactContainer{
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 70%;
+}
+
+.actionContactText{
+    width: 100%;
+    height: 37px;
+}
+
+.actionContactText > p{
+    position: relative;
+    top: -70%; 
+    padding: 0% 0% 0% 5%;
+    color: #0a0c57;
+}
+
+.numberContactText{
+    width: fit-content;
+    height: 37px;
+    position: relative;
+    top: -20%;
+    padding: 0% 0% 0% 5%;
+}
+.numberContactText > p{
+    font-size: 20px;
+}
+
+.actionButtonContact{
+    width: 100%;
+}
+
+.actionButtonContactBttn{
+    background-color: rgba(44, 65, 250, 0.13);
+    width: 100%;
+    height: 4vw;
+    border-radius: 10px;
+    text-align: center;
+    border-style: none;
+    font-size: 28px;
+    color: #3d34eb;
+    margin: 5% 0% 0% 0%;
+    cursor: pointer;
+}
+
+.actionButtonContactBttn:hover{
+    background-color: #3d34eb;
+    border-radius: 10px;
+    border-style: none;
+    padding: 0px 25px 0px 25px;/* Top, Right, Down, Left */
+    text-align: center;
+    color: rgb(255, 255, 255);
+    
+}
+
+/*=======================================================*/
+/*======================= Footer ========================*/
+/*=======================================================*/
+
+footer{
+    background-color: rgba(44, 65, 250, 0.13);
+    width: 100vw;
+    margin: -8px;
+}
+
+.footer1{
+    width: 52%;
+}
+
+.titleFooter{
+    padding: 0% 50% 0% 20%;
+    width: 100%;
+}
+
+.textFooterTitle{
+    padding: 0% 50% 0% 20%;
+    width: 100%;
+}
+
+.footerTopic{
+    width: 16%;
+}
+
+.titleFooterTopics{
+    color: #0a0c57;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.textFooter{
+    width: 100%;
+}
+
+.legalFooter{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.rightsFooter{
+    width: 55%;
+    padding: 0% 0% 0% 10%;
+}
+
+.policyFooter{
+    width: 45%;
+}
+
+.policyFooter > div{
+    margin: 0% 5% 0% 5%;
+}
