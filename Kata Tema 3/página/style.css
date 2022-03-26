@@ -1,0 +1,457 @@
+/*============================================================*/
+/*========================= General ==========================*/
+/*============================================================*/
+
+body{
+    background-color: rgb(44, 43, 43);
+}
+
+body, .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h2{
+    font-size: 32px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+h3{
+    width: 100%;
+    font-size: 32px;
+}
+
+h4{
+    font-size: 32px;
+    color: rgb(42, 42, 42);
+    font-weight: bold;
+}
+
+p{
+    margin: 0px;
+    font-weight: bold;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgb(255, 255, 255);
+    opacity: 1; /* Para Firefox */
+}
+
+/*============================================================*/
+/*======================= Animaciones ========================*/
+/*============================================================*/
+
+@keyframes azulBrillante {
+    0%      {background-color: rgb(13, 117, 202);}
+    45%      {background-color: rgb(13, 117, 202);}
+    50%     {background-color: rgb(121, 192, 224);}
+    75%      {background-color: rgb(13, 117, 202);}
+    100%    {background-color: rgb(13, 117, 202);}
+}
+
+@keyframes rojoBrillante {
+    0%      {background-color: rgb(143, 13, 13);}
+    45%      {background-color: rgb(143, 13, 13);}
+    50%     {background-color: rgb(195, 55, 55);}
+    60%      {background-color: rgb(143, 13, 13);}
+    100%    {background-color: rgb(143, 13, 13);}
+}
+
+@keyframes amarilloBrillante {
+    0%      {background-color: rgb(129, 122, 18);}
+    15%      {background-color: rgb(129, 122, 18);}
+    20%      {background-color: rgb(204, 194, 52);}
+    25%      {background-color: rgb(129, 122, 18);}
+    75%      {background-color: rgb(129, 122, 18);}
+    80%      {background-color: rgb(204, 194, 52);}
+    85%      {background-color: rgb(129, 122, 18);}
+    100%    {background-color: rgb(129, 122, 18);}
+}
+
+@keyframes amarilloAltBrillante {
+    0%      {background-color: rgb(129, 122, 18);}
+    10%      {background-color: rgb(204, 194, 52);}
+    90%     {background-color: rgb(204, 194, 52);}
+    100%    {background-color: rgb(129, 122, 18);}
+}
+
+@keyframes verdeBrillante {
+    0%      {background-color: rgb(24, 112, 16);}
+    60%      {background-color: rgb(24, 112, 16);}
+    65%      {background-color: rgb(59, 165, 50);}
+    70%     {background-color: rgb(24, 112, 16);}
+    100%    {background-color: rgb(24, 112, 16);}
+}
+
+/*============================================================*/
+/*========================= Pokedex ==========================*/
+/*============================================================*/
+
+.pokedex{
+    width: 75vw;
+    height: 49vw;
+    background-color: rgb(44, 43, 43);
+}
+
+.mitadIzquierda{
+    width: 45%;
+    background-color: rgb(218, 29, 12);
+    padding: 1%;
+    border-radius: 30px 0 0 30px;
+    border: 5px solid black;
+}
+
+.mitadDerecha{
+    width: 45%;
+    background-color: rgb(218, 29, 12);
+    padding: 1%;
+    border-radius: 0 30px 30px 0;
+    height: 83%;
+    align-self: flex-end;
+    border: 5px solid black;
+}
+
+.bisagra{
+    width: 4%;
+    background-color: black;
+}
+
+.circulo{
+    border-radius: 50%;
+    background-color: black;
+    margin-left: 2%;
+}
+
+.grande{
+    width: 100px;
+    height: 100px;
+    margin-left: 0%;
+    animation-name: azulBrillante;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    border: 5px solid rgb(13, 117, 202);
+}
+
+.mediano{
+    width: 65px;
+    height: 65px;
+}
+
+.chico{
+    width: 45px;
+    height: 45px;
+}
+
+.rojo{
+    animation-name: rojoBrillante;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    border: 5px solid rgb(143, 13, 13);
+}
+
+.amarillo{
+    animation-name: amarilloBrillante;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    border: 5px solid rgb(129, 122, 18);
+}
+
+.amarilloAlt{
+    animation-name: amarilloAltBrillante;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    border: 5px solid rgb(129, 122, 18);
+}
+
+.verde{
+    animation-name: verdeBrillante;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    border: 5px solid rgb(24, 112, 16);
+}
+
+.containerTopLeft{
+    justify-content: left;
+    margin: 0% 0% 1% 0%;
+    width: 100%;
+    border-bottom: 5px solid black;
+}
+
+.containerPantallaPrincipal{
+    background-color: rgb(68, 126, 10);
+    width: 85%;
+    height: 60%;
+    border: 35px solid rgb(109, 109, 109);
+    border-style: solid;
+    border-radius: 15px;
+    padding: 2%;
+    /*margin-top: 2%;*/
+    justify-content: flex-start;
+}
+
+.containerTitle{
+    width: 47%;
+    /*align-items: center;*/
+    margin-right: 3%;
+}
+
+.pokeTitle{
+    width: 100%;
+    text-align: center;
+}
+
+
+.containerInfo{
+    align-items: stretch;
+    width: 50%;
+}
+
+.containerImg{
+    width: 40%;
+    align-items: stretch;
+}
+
+.containerImg > img {
+    width: 275px;
+    height: 275px;
+}
+
+.containerStats{
+    width: 100%;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.stat{
+    width: 60%;
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: rgb(54, 0, 105);
+}
+
+.skill{
+    width: 30%;
+    font-size: 28px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: rgb(107, 0, 0);
+}
+
+.statPoints{
+    width: 40%;
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+
+.skillNames{
+    width: 70%;
+    font-size: 24px;
+    text-transform: capitalize;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+
+.circuloBttn{
+    background-color: rgb(34, 34, 34);
+    border: 5px solid rgb(34, 34, 34);
+    margin: 1% 0 -1% 0;
+}
+
+.circuloBttn:hover{
+    background-color: rgb(184, 184, 184);
+    transition: 0.3s;
+    border: 5px solid rgba(34, 34, 34, 0.513);
+}
+
+.rectanguloRedondeado{
+    width: 8vw;
+    height: 15px;
+    border-radius: 15px;
+    background-color: coral;
+    margin: 2%;
+}
+
+.rectanguloRojo{
+    background-color: rgb(143, 13, 13);
+    border: 5px solid rgb(143, 13, 13);
+}
+
+.rectanguloRojo:hover{
+    background-color: rgb(195, 55, 55);
+    border: 5px solid rgba(155, 43, 43, 0.616);
+    transition: 0.3s;
+}
+
+.rectanguloAzul{
+    background-color: rgb(13, 117, 202);
+    border: 5px solid rgb(13, 117, 202);
+}
+
+.rectanguloAzul:hover{
+    background-color: rgb(121, 192, 224);
+    border: 5px solid rgba(65, 122, 148, 0.575);
+    transition: 0.3s;
+}
+
+.containerLeftHalf{
+    width: 100%;
+    justify-content: flex-start;
+    /*margin: 5% 0% 0% 0%;*/
+}
+
+.containerInputs{
+    width: 100%;
+    justify-content: space-around;
+    margin: 2% 0% 0% 2%;
+}
+.containerInputs > input{
+    background-color: rgb(27, 124, 24);
+    width: 50%;
+    font-size: 24px;
+    color: white;
+    border: 5px solid black;
+}
+
+.containerInputs > button{
+    width: 220px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border-radius: 15px;
+    font-size: 24px;    
+    margin-top: -1%;
+    transition: width 0.5s;
+}
+
+.containerInputs > button:hover{
+    width: 240px;
+    color: rgb(12, 12, 12);
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.801), 0 17px 50px 0 rgba(0, 0, 0, 0.87);
+}
+
+.pantallaAlt{
+    width: 85%;
+    height: 20%;
+    background-color: rgb(52, 97, 8);
+    border-radius: 15px;
+    border: 15px solid rgb(109, 109, 109);
+    margin: 10% 0 -15% 0;
+    justify-content: center;
+}
+
+.conteinerSkills{
+    width: 100%;
+    height: fit-content;
+    margin: -2% 0 0 5%;
+}
+
+.containerAltBttns{
+    width: 85%;
+    height: 20%;
+}
+
+.bttnAlternative{
+    width: 18%;
+    height: auto;
+    background-color: rgb(13, 117, 202);
+    border: 5px solid rgb(14, 85, 143);
+}
+
+.bttnAlternative:hover{
+    background-color: rgb(19, 92, 151);
+    border: 5px solid rgb(19, 92, 151);
+    transition: 0.3s;
+}
+
+.containerRightBottomHalf{
+    width: 100%;
+    margin-top: -10%;
+}
+
+.containerAltBttnsBotomLeft{
+    width: 50%;
+}
+
+.bttnAlternative2{
+    width: 25%;
+    height: 30%;
+    background-color: rgb(206, 206, 206);
+    border: 5px solid rgb(124, 124, 124);
+}
+
+.bttnAlternative2:hover{
+    background-color: rgb(124, 124, 124);
+    border: 5px solid rgb(124, 124, 124);
+    transition: 0.3s;
+}
+
+.containerBttnsAltBottom{
+    width: 50%;
+    margin-left: -5%;
+    align-content: flex-start;
+    align-items: flex-end;
+}
+
+.contaierRectangulos{
+    width: 100%;
+}
+
+.rectanguloRedondeado2{
+    width: 40%;
+    height: 15px;
+    border-radius: 15px;
+    background-color: rgb(34, 34, 34);
+    border: 5px solid rgb(34, 34, 34);
+    margin: 2%;
+}
+
+.contaierCirculoAlt{
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.circuloAlt{
+    margin: 1%;
+}
+
+.containerPantallasAlt{
+    width: 100%;
+    margin: -8% 0 5% 0;
+    justify-content: space-evenly;
+}
+
+.pantallaAlt2{
+    width: 40%;
+    height: auto;
+    background-color: rgb(52, 97, 8);
+    border-radius: 15px;
+    border: 15px solid rgb(109, 109, 109);
+}
+
+.containerInfoAlt{
+    width: 100%;
+    margin: 5% 0 0 20%;
+    justify-content: flex-start;
+}
+
+.info{
+    width: 100%;
+    font-size: 32px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: rgb(14, 15, 88);
+}
+
+.infoPoints{
+    width: 100%;
+    height: 24px;
+    font-size: 24px;
+    text-transform: capitalize;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}  

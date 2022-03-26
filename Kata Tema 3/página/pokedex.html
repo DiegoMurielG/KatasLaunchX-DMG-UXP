@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pokedex</title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <div class="container pokedex"><!-- Pokedex -->
+            <div class="container mitadIzquierda">
+                <div class="container containerTopLeft">
+
+                    <div class="circulo grande"></div>
+
+                    <div class="circulo chico rojo"></div>
+
+                    <div class="circulo chico amarillo"></div>
+
+                    <div class="circulo chico verde"></div>
+                    
+                </div>
+                <div class="container containerPantallaPrincipal">
+                    <div class="container containerTitle">
+                        <div class="pokeTitle">
+                            <h2 id="pokeNameTitle">---------------</h2>
+                            <h4 id="pokeType">----------</h4>
+                        </div> 
+                        <div class="container containerImg">
+                            <img src="./imagenes/pokebola.png" alt="pokemon" id="pokeImg">
+                        </div>
+                    </div>
+                    
+                       
+                    <div class="container containerInfo">
+                        <div  class="container containerStats">
+                            <h3><u>Stats</u></h3>
+                            <p class="stat">Health</p><p class="statPoints" id="hp"></p><br>
+                            <p class="stat">Attack Damage</p><p class="statPoints" id="ap"></p><br>
+                            <p class="stat">Defense</p><p class="statPoints" id="dp"></p><br>
+                            <p class="stat">Attack Special Damage</p><p class="statPoints" id="asp"></p><br>
+                            <p class="stat">Defence Special Damage</p><p class="statPoints" id="dsp"></p><br>
+                            <p class="stat">Speed</p><p class="statPoints" id="speed"></p><br>
+                        </div> 
+                    </div>
+                    
+                </div>
+
+                <div class="container containerLeftHalf">
+                    <div class="circulo mediano circuloBttn"></div>
+                    <div class="rectanguloRedondeado rectanguloRojo"></div>
+                    <div class="rectanguloRedondeado rectanguloAzul"></div>
+                        
+                    <div class="container containerInputs">
+                        <input type="text" name="pokeName" id="pokeName" placeholder="pikachu">
+                        <button class=" circuloBttn" onclick="fetchPokemon()">Camibar pokemon</button><!-- Recive y manda al JS lo que pusimos en el Input Text /* imprimir() */-->
+                        <!-- AsI interactuamos con el DOM -->
+                    </div>
+                </div>
+            </div>
+            <div class="container bisagra">
+
+            </div>
+            <div class="container mitadDerecha"> 
+
+                <div class="pantallaAlt">
+                    <div class="container conteinerSkills">
+                        <h3><u>Skils</u></h3>
+                        <p class="skillNames" id="pokeSkill"></p>
+                    </div>
+                </div>
+
+                <div class="container containerAltBttns">
+                    <div class="bttnAlternative"></div>
+                    <div class="bttnAlternative"></div>
+                    <div class="bttnAlternative"></div>
+                    <div class="bttnAlternative"></div>
+                    <div class="bttnAlternative"></div>
+                    <div class="bttnAlternative"></div>
+                    <div class="bttnAlternative"></div>
+                    <div class="bttnAlternative"></div>
+                    <div class="bttnAlternative"></div>
+                    <div class="bttnAlternative"></div>
+                </div>
+
+                <div class="container containerRightBottomHalf">
+                    <div class="container containerAltBttnsBotomLeft">
+                        <div class="bttnAlternative2"></div>
+                        <div class="bttnAlternative2"></div>
+                    </div>
+                    <div class="container containerBttnsAltBottom">
+                        <div class="container contaierRectangulos">
+                            <div class="rectanguloRedondeado2 circuloBttn"></div>
+                            <div class="rectanguloRedondeado2 circuloBttn"></div>
+                        </div>
+                        <div class="container contaierCirculoAlt">
+                            <div class="circulo chico circuloAlt amarilloAlt"></div>   
+                        </div>
+                    </div>
+                    
+                     
+                    <div class="container containerPantallasAlt">
+                        <div class="container pantallaAlt2">
+                            <div class="container containerInfoAlt">
+                                <p class="info">Height</p><p class="infoPoints" id="height"></p><!-- <br> -->
+                            </div>
+                        </div>
+                        <div class="container pantallaAlt2">
+                            <div class="container containerInfoAlt">
+                                <p class="info">Weight</p><p class="infoPoints" id="weight"></p><!-- <br> -->
+                            </div>
+                        </div>
+                    </div>                   
+                </div>
+            </div>
+        </div>
+
+    </body>
+    <footer>
+        <script src="./pokedex.js"></script>
+    </footer>
+</html>
